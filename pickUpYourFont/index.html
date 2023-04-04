@@ -1,33 +1,28 @@
 <!DOCTYPE html>
-<html>
-<head>
-	<title>Dynamic Font Types</title>
-	<link rel="stylesheet" href="styles.css">
-</head>
-<body>
-  <div class="container">
-    <h1>Select a font:</h1>
-    <input type="text" id="text" placeholder="Type your text here">
-    <div id="options"></div>
-    <template id="option-template">
-      <div class="option">
-        <div class="circle top-left"></div>
-        <div class="circle top-right"></div>
-        <div class="circle bottom-left"></div>
-        <div class="circle bottom-right"></div>
-        <p class="text"></p>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Dynamic Font Selector</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Dynamic Font Selector</h1>
+    </header>
+    <main>
+      <div id="input-container">
+        <label for="input-text">Enter your text:</label>
+        <input type="text" id="input-text" />
       </div>
-    </template>
-  </div>
-  
-	
-	<template id="option-template">
-		<div class="option">
-			<div class="circle"></div>
-			<p class="text"></p>
-		</div>
-	</template>
-
-	<script src="app.js"></script>
-</body>
+      <div id="font-container"></div>
+      <template id="font-template">
+        <div class="cardFont">
+          <p class="cardFont-text"></p>
+        </div>
+      </template>
+    </main>
+    <script src="script.js"></script>
+  </body>
 </html>
