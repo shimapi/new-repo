@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Dynamic Font Types</title>
+	<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Select a font:</h1>
+    <input type="text" id="text" placeholder="Type your text here">
+    <div id="options"></div>
+    <template id="option-template">
+      <div class="option">
+        <div class="circle top-left"></div>
+        <div class="circle top-right"></div>
+        <div class="circle bottom-left"></div>
+        <div class="circle bottom-right"></div>
+        <p class="text"></p>
+      </div>
+    </template>
+  </div>
+  
+	
+	<template id="option-template">
+		<div class="option">
+			<div class="circle"></div>
+			<p class="text"></p>
+		</div>
+	</template>
+
+	<script src="app.js"></script>
+</body>
+</html>
